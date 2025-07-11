@@ -160,7 +160,7 @@ export default function CartPage() {
               <textarea
                 value={note}
                 onChange={(e) => setNote(e.target.value)}
-                className="w-full h-24 px-4 py-2 border border-purple-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 font-sans"
+                className="w-full h-24 px-4 py-2 border border-purple-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 font-sans text-black"
               />
             </div>
 
