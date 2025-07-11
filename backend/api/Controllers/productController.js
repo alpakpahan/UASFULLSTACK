@@ -1,6 +1,6 @@
 import { pool } from '../models/db.js';
 
-// Ambil semua produk
+// Ambil semua produk 
 export const getProducts = async (req, res) => {
   try {
     const result = await pool.query('SELECT * FROM products ORDER BY id ASC');
