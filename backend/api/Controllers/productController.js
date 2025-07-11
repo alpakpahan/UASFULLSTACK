@@ -11,7 +11,7 @@ export const getProducts = async (req, res) => {
   }
 };
 
-
+// Tambah produk (tanpa slug)
 export const createProduct = async (req, res) => {
   const { name, description, price } = req.body;
 
