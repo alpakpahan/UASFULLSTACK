@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background-image: url('/images/kopi.jpg'); /* Letakkan gambar di public/images/kopi.jpg */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  animation: zoomBackground 60s ease-in-out infinite alternate;
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  position: relative;
+  z-index: 0;
+}
+
+/* Overlay gelap agar teks tetap terlihat */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* Gelap transparan */
+  z-index: -1;
+}
+
+/* Animasi zoom efek latar belakang */
+@keyframes zoomBackground {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 110%;
+  }
+}
