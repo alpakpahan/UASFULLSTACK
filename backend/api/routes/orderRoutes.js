@@ -3,7 +3,7 @@ import {
   getOrders,
   createOrder,
   updateOrderStatus,
-  deleteOrder // <-- Tambah
+  deleteOrder,
 } from '../Controllers/orderController.js';
 
 const router = express.Router();
@@ -11,6 +11,6 @@ const router = express.Router();
 router.get('/', getOrders);
 router.post('/', createOrder);
 router.put('/:id/status', updateOrderStatus);
-router.delete('/:id', deleteOrder); // <-- Tambah
+router.delete('/:id', deleteOrder);
 
 export default router;

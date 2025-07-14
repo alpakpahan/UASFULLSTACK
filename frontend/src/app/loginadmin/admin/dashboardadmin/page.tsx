@@ -36,7 +36,7 @@ export default function DashboardAdmin() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Tombol Pesanan */}
         <Link
-          href="/loginadmin/admin/pesanan" // ✅ arahkan ke lokasi folder baru
+          href="/loginadmin/admin/pesanan" // arahkan ke lokasi folder baru
           className="bg-white shadow-md rounded-xl p-6 w-64 text-center hover:bg-purple-100 transition"
         >
           <h2 className="text-xl font-semibold text-purple-800">Pesanan</h2>

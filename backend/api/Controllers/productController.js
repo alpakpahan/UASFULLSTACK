@@ -11,7 +11,7 @@ export const getProducts = async (req, res) => {
   }
 };
 
-// Tambah produk (tanpa slug)
+// Tambah produk
 export const createProduct = async (req, res) => {
   const { name, description, price } = req.body;
 
@@ -31,7 +31,7 @@ export const createProduct = async (req, res) => {
   }
 };
 
-// Perbarui produk (tanpa slug)
+// Perbarui produk
 export const updateProduct = async (req, res) => {
   const { id } = req.params;
   const { name, description, price } = req.body;

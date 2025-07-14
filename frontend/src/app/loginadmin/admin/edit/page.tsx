@@ -58,7 +58,7 @@ export default function EditPage() {
   const handleAddProduct = async () => {
     const { name, description, price } = newProduct
     if (!name || !description || price <= 0) {
-      alert('❗ Semua kolom harus diisi dengan benar.')
+      alert(' Semua kolom harus diisi dengan benar.')
       return
     }
 
